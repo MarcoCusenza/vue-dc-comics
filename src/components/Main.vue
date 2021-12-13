@@ -16,7 +16,7 @@ export default {
 main {
   line-height: 120px;
   background-color: $darkest;
-  color: whitesmoke;
+  color: $light-text;
   font-size: 30px;
 }
 </style>

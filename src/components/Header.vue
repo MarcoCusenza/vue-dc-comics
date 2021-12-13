@@ -5,35 +5,8 @@
     </div>
     <nav>
       <ul>
-        <li>
-          <a href="#">characters</a>
-        </li>
-        <li>
-          <a href="#">comics</a>
-        </li>
-        <li>
-          <a href="#">movies</a>
-        </li>
-        <li>
-          <a href="#">tv</a>
-        </li>
-        <li>
-          <a href="#">games</a>
-        </li>
-        <li>
-          <a href="#">collectibles</a>
-        </li>
-        <li>
-          <a href="#">videos</a>
-        </li>
-        <li>
-          <a href="#">fans</a>
-        </li>
-        <li>
-          <a href="#">news</a>
-        </li>
-        <li>
-          <a href="#">shop</a>
+        <li v-for="(link, i) in links" :key="i">
+          <a :href="link.url">{{link.text}}</a>
         </li>
       </ul>
     </nav>
@@ -45,6 +18,63 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      //DATI COMPONENTE
+      links: [
+        {
+          text: "characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "comics",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "tv",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "news",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
