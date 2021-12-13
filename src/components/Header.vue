@@ -40,11 +40,46 @@
   </header>
 </template>
 
+
+
 <script>
 export default {
   name: "Header",
 };
 </script>
 
-<style>
+
+
+<style lang="scss" scoped>
+@import "../assets/style/partials/variables.scss";
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    margin-left: 30px;
+    transform: scale(0.8);
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      margin: 0 10px;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #494949;
+      }
+    }
+  }
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="wip">Content goes here</div>
+    <div class="wip">--> Content goes here</div>
   </main>
 </template>
 
@@ -10,5 +10,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "../assets/style/partials/variables.scss";
+
+main {
+  line-height: 120px;
+  background-color: $darkest;
+  color: whitesmoke;
+  font-size: 30px;
+}
 </style>
