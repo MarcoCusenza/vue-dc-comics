@@ -1,6 +1,8 @@
 <template>
   <main>
-    <div class="wip">--> Content goes here</div>
+    <div class="container">
+      <div class="wip">--> Content goes here</div>
+    </div>
   </main>
 </template>
 
@@ -18,5 +20,6 @@ main {
   background-color: $darkest;
   color: $light-text;
   font-size: 30px;
+  text-align: center;
 }
 </style>

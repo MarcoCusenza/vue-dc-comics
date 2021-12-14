@@ -1,15 +1,17 @@
 <template>
   <header>
-    <div class="logo">
-      <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+      </div>
+      <nav>
+        <ul>
+          <li v-for="(link, i) in links" :key="i">
+            <a :href="link.url">{{ link.text }}</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li v-for="(link, i) in links" :key="i">
-          <a :href="link.url">{{link.text}}</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 </template>
 
@@ -85,29 +87,31 @@ export default {
 
 header {
   height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  img {
-    margin-left: 30px;
-    transform: scale(0.8);
-  }
-
-  nav {
-    ul {
-      list-style: none;
-      display: flex;
+    img {
+      margin-left: 30px;
+      transform: scale(0.8);
     }
 
-    li {
-      margin: 0 10px;
-      text-transform: uppercase;
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+      }
 
-      a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #494949;
+      li {
+        margin: 0 10px;
+        text-transform: uppercase;
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #494949;
+        }
       }
     }
   }
