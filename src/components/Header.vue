@@ -86,15 +86,17 @@ export default {
 @import "../assets/style/partials/variables.scss";
 
 header {
-  height: 100px;
+  background-color: $light;
+
   .container {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     img {
       margin-left: 30px;
-      transform: scale(0.8);
+      height: 70px;
     }
 
     nav {
@@ -108,6 +110,7 @@ header {
         text-transform: uppercase;
 
         a {
+          font-size: 14px;
           text-decoration: none;
           font-weight: bold;
           color: #494949;

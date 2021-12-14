@@ -73,7 +73,20 @@ HTML
       </div>
     </div>
     <div class="footer-bot">
-      <div class="container"></div>
+      <div class="container">
+        <a href="#" class="signup">sign-up now!</a>
+        <div class="socials">
+          <div class="follow-us">follow us</div>
+          <a
+            v-for="(social, i) in socials"
+            :key="i"
+            :href="social.url"
+            class="social"
+          >
+            <img :src="getImgUrl(social.image)" :alt="social.name" />
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -223,6 +236,33 @@ export default {
           url: "#",
         },
       ],
+      socials: [
+        {
+          name: "facebook",
+          image: "footer-facebook.png",
+          url: "#",
+        },
+        {
+          name: "twitter",
+          image: "footer-twitter.png",
+          url: "#",
+        },
+        {
+          name: "youtube",
+          image: "footer-youtube.png",
+          url: "#",
+        },
+        {
+          name: "pinterest",
+          image: "footer-pinterest.png",
+          url: "#",
+        },
+        {
+          name: "periscope",
+          image: "footer-periscope.png",
+          url: "#",
+        },
+      ],
     };
   },
   methods: {
@@ -249,7 +289,7 @@ FOOTER TOP
   color: $light-text;
 
   .container {
-    height: 200px;
+    height: 160px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -275,15 +315,16 @@ FOOTER TOP
 
     .icon {
       img {
-        height: 60px;
+        height: 55px;
       }
     }
 
     &:last-of-type .icon img {
-      height: 45px;
+      height: 40px;
     }
 
     .section-name {
+      font-size: 15px;
       text-transform: uppercase;
       margin-left: 10px;
     }
@@ -311,7 +352,7 @@ FOOTER MID
     padding: 50px 0;
 
     .col {
-      width: 200px;
+      width: 170px;
 
       .section {
         margin: 10px 0;
@@ -347,7 +388,39 @@ FOOTER MID
 FOOTER BOT
 ------- */
 .footer-bot {
-  height: 100px;
   background-color: $dark;
+
+  .container {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .signup {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid $lightblue;
+      padding: 15px 20px;
+      color: $light-text;
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+
+      .follow-us {
+        text-transform: uppercase;
+        color: $lightblue;
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+
+      .social {
+        margin: 0 10px;
+      }
+    }
+  }
 }
 </style>
