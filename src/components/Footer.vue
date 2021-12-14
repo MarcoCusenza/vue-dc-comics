@@ -3,6 +3,7 @@ HTML
 ----------------*/
 <template>
   <footer>
+    <!-- <FooterTop /> NON FUNZIONA Errore Babel? -->
     <!-- FOOTER TOP -->
     <div class="footer-top">
       <div class="container">
@@ -20,6 +21,7 @@ HTML
       </div>
     </div>
 
+    <!-- <FooterMid /> NON FUNZIONA Errore Babel?-->
     <!-- FOOTER MID -->
     <div class="footer-mid">
       <div class="container">
@@ -72,6 +74,9 @@ HTML
         </div>
       </div>
     </div>
+
+    <!-- <FooterBot /> NON FUNZIONA Errore Babel?-->
+    <!-- FOOTER BOT -->
     <div class="footer-bot">
       <div class="container">
         <a href="#" class="signup">sign-up now!</a>
@@ -97,8 +102,19 @@ HTML
 SCRIPT
 ----------------*/
 <script>
+// import FooterTop from "./components/partials/FooterTop.vue";
+// import FooterMid from "./components/partials/FooterMid.vue";
+// import FooterBot from "./components/partials/FooterBot.vue";
+
 export default {
   name: "Footer",
+
+  components: {
+    // FooterTop,
+    // FooterMid,
+    // FooterBot
+  },
+
   data() {
     return {
       sectionsBuy: [
@@ -339,9 +355,14 @@ FOOTER MID
   position: relative;
   z-index: -2;
 
+  .container {
+    position: relative;
+    z-index: -2;
+  }
+
   #dc-logo-bg {
     position: absolute;
-    right: 200px;
+    right: 0px;
     transform: translate(0, -20%);
     overflow: hidden;
     z-index: -1;
