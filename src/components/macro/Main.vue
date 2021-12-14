@@ -12,7 +12,7 @@ import MainSeries from "../sections/MainSeries.vue";
 
 export default {
   name: "Main",
-  contents: {
+  components: {
     MainSeries,
   },
 };
