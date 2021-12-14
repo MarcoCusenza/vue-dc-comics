@@ -1,13 +1,20 @@
 <template>
   <main>
     <div class="jumbo"></div>
-    <div class="container"></div>
+    <div class="container">
+      <MainSeries />
+    </div>
   </main>
 </template>
 
 <script>
+import MainSeries from "../sections/MainSeries.vue";
+
 export default {
   name: "Main",
+  contents: {
+    MainSeries,
+  },
 };
 </script>
 
