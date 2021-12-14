@@ -4,7 +4,7 @@
     <div class="container">
       <img
         id="dc-logo-bg"
-        src="../assets/img/dc-logo-bg.png"
+        src="../../assets/img/dc-logo-bg.png"
         alt="DC Logo Background"
       />
       <div class="links">
@@ -175,10 +175,10 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../assets/style/partials/variables.scss";
+@import "../../assets/style/partials/variables.scss";
 
 .footer-mid {
-  background-image: url("../assets/img/footer-bg.jpg");
+  background-image: url("../../assets/img/footer-bg.jpg");
   position: relative;
   z-index: -2;
 

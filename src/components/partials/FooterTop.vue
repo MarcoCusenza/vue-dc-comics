@@ -55,7 +55,7 @@ export default {
   },
   methods: {
     getImgUrl(img) {
-      return require("../assets/img/" + img);
+      return require("../../assets/img/" + img);
     },
   },
 };
@@ -64,7 +64,7 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../assets/style/partials/variables.scss";
+@import "../../assets/style/partials/variables.scss";
 
 .footer-top {
   background-color: $lightblue;

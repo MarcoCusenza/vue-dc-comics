@@ -3,9 +3,9 @@ HTML
 ----------------*/
 <template>
   <footer>
-    <!-- <FooterTop /> NON FUNZIONA Errore Babel? -->
+    <FooterTop />
     <!-- FOOTER TOP -->
-    <div class="footer-top">
+    <!-- <div class="footer-top">
       <div class="container">
         <a
           class="card"
@@ -19,11 +19,11 @@ HTML
           <div class="section-name">{{ section.text }}</div>
         </a>
       </div>
-    </div>
+    </div> -->
 
-    <!-- <FooterMid /> NON FUNZIONA Errore Babel?-->
+    <FooterMid />
     <!-- FOOTER MID -->
-    <div class="footer-mid">
+    <!-- <div class="footer-mid">
       <div class="container">
         <img
           id="dc-logo-bg"
@@ -73,11 +73,11 @@ HTML
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- <FooterBot /> NON FUNZIONA Errore Babel?-->
+    <FooterBot />
     <!-- FOOTER BOT -->
-    <div class="footer-bot">
+    <!-- <div class="footer-bot">
       <div class="container">
         <a href="#" class="signup">sign-up now!</a>
         <div class="socials">
@@ -92,7 +92,7 @@ HTML
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
   </footer>
 </template>
 
@@ -102,17 +102,17 @@ HTML
 SCRIPT
 ----------------*/
 <script>
-// import FooterTop from "./components/partials/FooterTop.vue";
-// import FooterMid from "./components/partials/FooterMid.vue";
-// import FooterBot from "./components/partials/FooterBot.vue";
+import FooterTop from "./partials/FooterTop.vue";
+import FooterMid from "./partials/FooterMid.vue";
+import FooterBot from "./partials/FooterBot.vue";
 
 export default {
   name: "Footer",
 
   components: {
-    // FooterTop,
-    // FooterMid,
-    // FooterBot
+    FooterTop,
+    FooterMid,
+    FooterBot
   },
 
   data() {
