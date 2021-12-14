@@ -179,20 +179,17 @@ export default {
 
 .footer-mid {
   background-image: url("../../assets/img/footer-bg.jpg");
-  position: relative;
-  z-index: -2;
+  background-size: cover;
+  overflow: hidden;
 
   .container {
     position: relative;
-    z-index: -2;
   }
 
   #dc-logo-bg {
     position: absolute;
     right: 0px;
     transform: translate(0, -20%);
-    overflow: hidden;
-    z-index: -1;
   }
 
   .links {

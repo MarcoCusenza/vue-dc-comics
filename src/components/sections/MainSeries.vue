@@ -1,7 +1,9 @@
 <template>
   <div class="main-series">
+    <div class="cur-ser blue-box">current series</div>
     <div class="container">
       <Card v-for="(product, i) in products" :key="i" :obj="product" />
+      <a href="#" class="blue-box">load more</a>
     </div>
   </div>
 </template>
@@ -108,12 +110,55 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partials/variables.scss";
+
 .main-series {
-  
+  position: relative;
+
+  .blue-box {
+    background-color: $lightblue;
+    color: $light-text;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 0;
+
+    &.cur-ser {
+      width: 270px;
+      font-size: 30px;
+      position: absolute;
+      top: 0;
+      transform: translate(0, -50%);
+    }
+  }
 
   .container {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 0 150px 0;
+    text-align: center;
+
+    .card {
+      width: 170px;
+      margin: 20px 20px;
+      text-align: left;
+
+      // PERCHE' NON ME LI PRENDE QUA?
+      // img {
+      //   height: 250px;
+      // }
+      // .text {
+      //   color: $light-text;
+      //   font-size: 13px;
+      //   text-transform: uppercase;
+      // }
+    }
+
+    a {
+      text-decoration: none;
+      margin: 20px auto;
+      padding: 10px 20px;
+    }
   }
 }
 </style>

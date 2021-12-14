@@ -18,10 +18,6 @@ export default {
 @import "../../assets/style/partials/variables.scss";
 
 .card {
-  width: 170px;
-  margin: 20px 20px;
-  text-align: left;
-
   img {
     height: 250px;
   }
