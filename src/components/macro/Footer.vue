@@ -102,9 +102,9 @@ HTML
 SCRIPT
 ----------------*/
 <script>
-import FooterTop from "./partials/FooterTop.vue";
-import FooterMid from "./partials/FooterMid.vue";
-import FooterBot from "./partials/FooterBot.vue";
+import FooterTop from "../sections/FooterTop.vue";
+import FooterMid from "../sections/FooterMid.vue";
+import FooterBot from "../sections/FooterBot.vue";
 
 export default {
   name: "Footer",
@@ -112,178 +112,12 @@ export default {
   components: {
     FooterTop,
     FooterMid,
-    FooterBot
+    FooterBot,
   },
 
-  data() {
-    return {
-      sectionsBuy: [
-        {
-          url: "#",
-          text: "digital comics",
-          image: "buy-comics-digital-comics.png",
-        },
-        {
-          url: "#",
-          text: "dc merchandise",
-          image: "buy-comics-merchandise.png",
-        },
-        {
-          url: "#",
-          text: "subscription",
-          image: "buy-comics-subscriptions.png",
-        },
-        {
-          url: "#",
-          text: "comic shop locator",
-          image: "buy-comics-shop-locator.png",
-        },
-        {
-          url: "#",
-          text: "dc power visa",
-          image: "buy-dc-power-visa.svg",
-        },
-      ],
-      footDcCom: [
-        {
-          text: "Characters",
-          url: "#",
-        },
-        {
-          text: "Comics",
-          url: "#",
-        },
-        {
-          text: "Movies",
-          url: "#",
-        },
-        {
-          text: "TV",
-          url: "#",
-        },
-        {
-          text: "Games",
-          url: "#",
-        },
-        {
-          text: "Videos",
-          url: "#",
-        },
-        {
-          text: "News",
-          url: "#",
-        },
-      ],
-      footShop: [
-        {
-          text: "Shop DC",
-          url: "#",
-        },
-        {
-          text: "Shop DC Collectibles",
-          url: "#",
-        },
-      ],
-      footDc: [
-        {
-          text: "Terms Of Use",
-          url: "#",
-        },
-        {
-          text: "Privacy policy (New)",
-          url: "#",
-        },
-        {
-          text: "Ad Choices",
-          url: "#",
-        },
-        {
-          text: "Advertising",
-          url: "#",
-        },
-        {
-          text: "Jobs",
-          url: "#",
-        },
-        {
-          text: "Subrsciptions",
-          url: "#",
-        },
-        {
-          text: "Talent Workshops",
-          url: "#",
-        },
-        {
-          text: "CPSC Certificates",
-          url: "#",
-        },
-        {
-          text: "Ratings",
-          url: "#",
-        },
-        {
-          text: "Shop Help",
-          url: "#",
-        },
-        {
-          text: "Contact Us",
-          url: "#",
-        },
-      ],
-      footSites: [
-        {
-          text: "DC",
-          url: "#",
-        },
-        {
-          text: "MAD Magazine",
-          url: "#",
-        },
-        {
-          text: "DC Kids",
-          url: "#",
-        },
-        {
-          text: "DC Universe",
-          url: "#",
-        },
-        {
-          text: "DC Power Visa",
-          url: "#",
-        },
-      ],
-      socials: [
-        {
-          name: "facebook",
-          image: "footer-facebook.png",
-          url: "#",
-        },
-        {
-          name: "twitter",
-          image: "footer-twitter.png",
-          url: "#",
-        },
-        {
-          name: "youtube",
-          image: "footer-youtube.png",
-          url: "#",
-        },
-        {
-          name: "pinterest",
-          image: "footer-pinterest.png",
-          url: "#",
-        },
-        {
-          name: "periscope",
-          image: "footer-periscope.png",
-          url: "#",
-        },
-      ],
-    };
-  },
   methods: {
     getImgUrl(img) {
-      return require("../assets/img/" + img);
+      return require("../../assets/img/" + img);
     },
   },
 };
@@ -295,7 +129,7 @@ export default {
 CSS
 ----------------*/
 <style lang="scss" scoped>
-@import "../assets/style/partials/variables.scss";
+@import "../../assets/style/partials/variables.scss";
 
 /* -------
 FOOTER TOP
@@ -351,7 +185,7 @@ FOOTER TOP
 FOOTER MID
 ------- */
 .footer-mid {
-  background-image: url("../assets/img/footer-bg.jpg");
+  background-image: url("../../assets/img/footer-bg.jpg");
   position: relative;
   z-index: -2;
 

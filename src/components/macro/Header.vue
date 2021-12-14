@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+        <img src="../../assets/img/dc-logo.png" alt="Logo DC" />
       </div>
       <nav>
         <ul>
@@ -83,7 +83,7 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../assets/style/partials/variables.scss";
+@import "../../assets/style/partials/variables.scss";
 
 header {
   background-color: $light;
