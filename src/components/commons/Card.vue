@@ -18,8 +18,13 @@ export default {
 @import "../../assets/style/partials/variables.scss";
 
 .card {
+  &:hover img {
+    opacity: 1;
+    transition: .5s
+  }
   img {
     width: 80%;
+    opacity: .9;
   }
   .text {
     width: 80%;

@@ -91,7 +91,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background-color: #0d6ac7;
+      background-color: $darkblue;
       transition: 0.4s;
     }
 

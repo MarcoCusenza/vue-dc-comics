@@ -110,10 +110,10 @@ header {
         margin: 0 10px;
         text-transform: uppercase;
         border-bottom: 4px solid transparent;
+        transition: 0.5s;
 
         &:hover {
           border-color: $lightblue;
-          transition: .3s;
         }
 
         a {
@@ -124,7 +124,7 @@ header {
 
           &:hover {
             color: $lightblue;
-            transition: .3s;
+            transition: 0.3s;
           }
         }
       }

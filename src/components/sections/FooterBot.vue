@@ -84,6 +84,11 @@ export default {
       border: 2px solid $lightblue;
       padding: 15px 20px;
       color: $light-text;
+      transition: 0.2s ease-out;
+
+      &:hover {
+        background-color: $lightblue;
+      }
     }
 
     .socials {
@@ -100,6 +105,13 @@ export default {
 
       .social {
         margin: 0 10px;
+        img {
+          transition: 0.2s ease-out;
+
+          &:hover {
+            filter: brightness(1.4);
+          }
+        }
       }
     }
   }

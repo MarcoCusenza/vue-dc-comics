@@ -151,6 +151,7 @@ export default {
         align-items: center;
         &:hover {
           background-color: rgba(27, 27, 27, 0.774);
+          transition: 0.3s;
         }
 
         // PERCHE' NON ME LI PRENDE QUA?
@@ -168,6 +169,10 @@ export default {
     a {
       text-decoration: none;
       padding: 10px 20px;
+
+      &:hover {
+        background-color: $darkblue;
+      }
     }
   }
 }
