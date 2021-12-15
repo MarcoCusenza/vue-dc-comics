@@ -137,15 +137,14 @@ export default {
   .container {
     padding: 50px 0;
     text-align: center;
-    .container-card {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 30px 0;
-      text-align: center;
 
+    .container-card {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      padding: 30px 0;
       .card {
         padding: 20px;
-        margin: 20px 20px;
+        min-width: 200px;
         text-align: left;
         display: flex;
         flex-direction: column;

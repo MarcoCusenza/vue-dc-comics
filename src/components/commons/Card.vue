@@ -19,10 +19,10 @@ export default {
 
 .card {
   img {
-    width: 150px;
+    width: 80%;
   }
   .text {
-    width: 150px;
+    width: 80%;
     margin-top: 5px;
     color: $light-text;
     font-size: 13px;
