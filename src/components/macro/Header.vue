@@ -106,14 +106,26 @@ header {
       }
 
       li {
+        line-height: 96px;
         margin: 0 10px;
         text-transform: uppercase;
+        border-bottom: 4px solid transparent;
+
+        &:hover {
+          border-color: $lightblue;
+          transition: .3s;
+        }
 
         a {
           font-size: 14px;
           text-decoration: none;
           font-weight: bold;
           color: #494949;
+
+          &:hover {
+            color: $lightblue;
+            transition: .3s;
+          }
         }
       }
     }

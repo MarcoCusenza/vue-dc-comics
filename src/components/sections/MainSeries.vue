@@ -2,7 +2,9 @@
   <div class="main-series">
     <div class="cur-ser blue-box">current series</div>
     <div class="container">
-      <Card v-for="(product, i) in products" :key="i" :obj="product" />
+      <div class="container-card">
+        <Card v-for="(product, i) in products" :key="i" :obj="product" />
+      </div>
       <a href="#" class="blue-box">load more</a>
     </div>
   </div>
@@ -133,30 +135,39 @@ export default {
   }
 
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px 0 150px 0;
+    padding: 50px 0;
     text-align: center;
+    .container-card {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 0;
+      text-align: center;
 
-    .card {
-      width: 170px;
-      margin: 20px 20px;
-      text-align: left;
+      .card {
+        padding: 20px;
+        margin: 20px 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover {
+          background-color: rgba(27, 27, 27, 0.774);
+        }
 
-      // PERCHE' NON ME LI PRENDE QUA?
-      // img {
-      //   height: 250px;
-      // }
-      // .text {
-      //   color: $light-text;
-      //   font-size: 13px;
-      //   text-transform: uppercase;
-      // }
+        // PERCHE' NON ME LI PRENDE QUA?
+        // img {
+        //   height: 250px;
+        // }
+        // .text {
+        //   color: $light-text;
+        //   font-size: 13px;
+        //   text-transform: uppercase;
+        // }
+      }
     }
 
     a {
       text-decoration: none;
-      margin: 20px auto;
       padding: 10px 20px;
     }
   }

@@ -1,8 +1,8 @@
 <template>
-  <div class="card">
+  <a class="card" href="#">
     <img :src="obj.thumb" :alt="obj.series" />
     <div class="text">{{ obj.series }}</div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -19,9 +19,11 @@ export default {
 
 .card {
   img {
-    height: 250px;
+    width: 150px;
   }
   .text {
+    width: 150px;
+    margin-top: 5px;
     color: $light-text;
     font-size: 13px;
     text-transform: uppercase;
